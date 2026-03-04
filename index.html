@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>HCI Example 3/2/2026</title>
-        <link rel="stylesheet" href="styles.css"/>
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <script type="text/javascript" src="script.js"></script>
-    </head>
+<head>
+    <title>HCI Example</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
 
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                   
-                </ul>
-                
-            </nav>
-        </header>
-        
-        <main>
-            <section class="hero">
-                <h1>Homepage</h1>
-                <p>Here is the stuff I offer...</p>
-                <button id="myBtn">Click me!</button>
-            </section>
+<header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Homepage</h1>
+        <p>This is my simple web app.</p>
+
+        <button id="colorBtn">Toggle Background</button>
+
+        <div class="list-section">
+            <input type="text" id="userInput" placeholder="Type something">
+            <button id="addBtn">Add to List</button>
+            <ul id="outputList"></ul>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>2026</p>
+</footer>
+</body>
+</html>

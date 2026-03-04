@@ -1,14 +1,22 @@
-document.getElementById("myBtn")?.addEventListener("click", () => {
-    document.getElementById("my-offeringa").toggleAttribute("hidden");
-})
+let colorBtn = document.getElementById("colorBtn");
+let addBtn = document.getElementById("addBtn");
 
-document.getElementById("taskBtn")?.addEventListener("click", () =>{
-    let task = document.getElementById("task");
-    let tasklist = document.getElementById("taskList");
-    if(task.ariaValueMax.trim()!= ""){
-        const newTask = document.createElement("li");
-        newTask.textContent = task.values;
-        tasklist.appendChild(newTask);
-        task.value = "";
+colorBtn.addEventListener("click", function() {
+    if (document.body.style.backgroundColor === "lightpink") {
+        document.body.style.backgroundColor = "pink";
+    } else {
+        document.body.style.backgroundColor = "lightpink";
     }
-})
+});
+
+addBtn.addEventListener("click", function() {
+    let input = document.getElementById("userInput");
+    let list = document.getElementById("outputList");
+
+    if (input.value.trim() !== "") {
+        let li = document.createElement("li");
+        li.textContent = input.value;
+        list.appendChild(li);
+        input.value = "";
+    }
+});
